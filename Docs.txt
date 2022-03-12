@@ -1,0 +1,19 @@
+legend:
+[] optional field
+<> required field
+command         description [S][C]
+
+S - implemented on the server
+C - implemented on the client
+
+Commands:
+disconnect69    disconnect from the server S
+mexicanbomber69 shutdown the server        S
+//name <name>   set own name
+//list-users
+
+
+packet structures/formats:
+  raw0:
+    char[128] size n of the packet as a padded string
+    char[n]   message encoded as utf-8 string
